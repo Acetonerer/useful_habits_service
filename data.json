@@ -1,0 +1,322 @@
+[
+  {
+    "model": "habits.habit",
+    "pk": 4,
+    "fields": {
+      "owner": 2,
+      "place": "Работа",
+      "time_start": "10:00:00",
+      "action": "Съесть конфету",
+      "is_pleasant": true,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": null,
+      "time_complete": 60,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 5,
+    "fields": {
+      "owner": 2,
+      "place": "Кухня",
+      "time_start": "08:00:00",
+      "action": "Выпить стакан воды",
+      "is_pleasant": false,
+      "related_habit": 4,
+      "periodicity": "1",
+      "reward": null,
+      "time_complete": 120,
+      "is_published": true
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 6,
+    "fields": {
+      "owner": 2,
+      "place": "Набережная",
+      "time_start": "07:00:00",
+      "action": "Зарядка перед пробежкой",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "Выпить кофе в кофейне",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 7,
+    "fields": {
+      "owner": 3,
+      "place": "Дом",
+      "time_start": "22:00:00",
+      "action": "Прочитать 5 страниц книги",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "Сделать масочку",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 8,
+    "fields": {
+      "owner": null,
+      "place": "Зал",
+      "time_start": "22:35:00",
+      "action": "Приседания",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "выпить свежевыжатый сок",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 9,
+    "fields": {
+      "owner": 3,
+      "place": "Зал",
+      "time_start": "22:40:00",
+      "action": "Приседания",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "выпить свежевыжатый сок",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 10,
+    "fields": {
+      "owner": null,
+      "place": "Комната",
+      "time_start": "22:55:00",
+      "action": "Медитация",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "выпить свежевыжатый сок",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 11,
+    "fields": {
+      "owner": null,
+      "place": "Закрытая комната",
+      "time_start": "22:55:00",
+      "action": "Медитация",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 12,
+    "fields": {
+      "owner": 3,
+      "place": "Закрытая комната",
+      "time_start": "23:00:00",
+      "action": "Медитация",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 13,
+    "fields": {
+      "owner": null,
+      "place": "Ванная",
+      "time_start": "23:07:00",
+      "action": "почитстить зубы коту",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 14,
+    "fields": {
+      "owner": null,
+      "place": "Ванная",
+      "time_start": "23:07:00",
+      "action": "почитстить зубы коту",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 15,
+    "fields": {
+      "owner": 3,
+      "place": "test",
+      "time_start": "17:00:00",
+      "action": "почитстить зубы коту",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 16,
+    "fields": {
+      "owner": 3,
+      "place": "test",
+      "time_start": "23:33:00",
+      "action": "почитстить зубы коту",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 17,
+    "fields": {
+      "owner": 3,
+      "place": "test123",
+      "time_start": "23:55:00",
+      "action": "почитстить зубы коту",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 18,
+    "fields": {
+      "owner": 3,
+      "place": "test",
+      "time_start": "17:00:00",
+      "action": "почитстить зубы коту",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 19,
+    "fields": {
+      "owner": null,
+      "place": "hhh",
+      "time_start": "00:20:00",
+      "action": "почитстить зубы коту",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 20,
+    "fields": {
+      "owner": 3,
+      "place": "test",
+      "time_start": "17:00:00",
+      "action": "почитстить зубы коту",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 21,
+    "fields": {
+      "owner": 3,
+      "place": "test",
+      "time_start": "16:00:00",
+      "action": "почитстить зубы коту",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "3",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 22,
+    "fields": {
+      "owner": 3,
+      "place": "test",
+      "time_start": "16:00:00",
+      "action": "почитстить зубы коту",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 23,
+    "fields": {
+      "owner": 3,
+      "place": "test",
+      "time_start": "17:00:00",
+      "action": "погулять с собакой",
+      "is_pleasant": false,
+      "related_habit": null,
+      "periodicity": "1",
+      "reward": "скушать яблоко",
+      "time_complete": 120,
+      "is_published": false
+    }
+  }
+]
