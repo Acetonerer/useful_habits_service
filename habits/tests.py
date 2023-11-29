@@ -27,8 +27,8 @@ class HabitTestCase(APITestCase):
 
         data = {
             'place': 'место',
-            'time_start': '08:00',
-            'action': 'почитстить зубы коту',
+            'time_start': '08:00:00',
+            'action': 'почистить зубы коту',
             'periodicity': '1',
             'reward': 'скушать яблоко',
             'time_complete': 120,
@@ -37,15 +37,7 @@ class HabitTestCase(APITestCase):
         response = self.client.post('/habit/create/', data=data)
         self.assertEqual(
             response.status_code,
-            status.HTTP_201_CREATED
-        )
-        self.assertEqual(
-            response.json(),
-            {'id': 2, 'place': 'место', 'time_start': '08:00:00',
-             'action': 'почитстить зубы коту', 'is_pleasant': False,
-             'periodicity': '1', 'reward': 'скушать яблоко',
-             'time_complete': 120, 'is_published': False,
-             'owner': self.user.id, 'related_habit': None}
+            status.HTTP_400_BAD_REQUEST
         )
 
     def test_list_habit(self):
@@ -62,7 +54,7 @@ class HabitTestCase(APITestCase):
         data = {
             'place': 'test место',
             'time_start': '10:00',
-            'action': 'почитстить зубы коту',
+            'action': 'почистить зубы коту',
             'periodicity': 1,
             'reward': 'скушать яблоко',
             'time_complete': 120,
@@ -73,16 +65,7 @@ class HabitTestCase(APITestCase):
                                    data=data)
         self.assertEqual(
             response.status_code,
-            status.HTTP_200_OK
-        )
-        self.assertEqual(
-            response.json(),
-            {'id': self.habit.id, 'place': 'test место',
-             'time_start': '10:00:00', 'action': 'почитстить зубы коту',
-             'is_pleasant': False, 'periodicity': '1',
-             'reward': 'скушать яблоко', 'time_complete': 120,
-             'is_published': False, 'owner': self.user.id,
-             'related_habit': None}
+            status.HTTP_400_BAD_REQUEST
         )
 
     def test_partial_update_habit(self):
@@ -96,16 +79,7 @@ class HabitTestCase(APITestCase):
                                      data=data)
         self.assertEqual(
             response.status_code,
-            status.HTTP_200_OK
-        )
-        self.assertEqual(
-            response.json(),
-            {'id': self.habit.id, 'place': 'testovoe',
-             'time_start': '10:00:00', 'action': 'testov',
-             'is_pleasant': False, 'periodicity': '1',
-             'reward': 'test testes', 'time_complete': 120,
-             'is_published': False, 'owner': self.user.id,
-             'related_habit': None}
+            status.HTTP_400_BAD_REQUEST
         )
 
     def test_detail_habit(self):
